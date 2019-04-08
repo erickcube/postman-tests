@@ -1,0 +1,1232 @@
+{
+	"info": {
+		"_postman_id": "a2cf5533-bc68-477d-8f0f-c4536abdc2ed",
+		"name": "superzapatos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "superzapatos.tk/services/stores",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/stores",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"stores"
+					]
+				},
+				"description": "Gets all stores"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/stores",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/stores",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"stores"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:07:26 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IkxGMDRuTk82dnIzN2lDN0dFWnpieHc9PSIsInZhbHVlIjoiXC9cL3dvVzBmZnVrRklPNTB0MFpwc1RLWmhPNVVaMERcL2RRV3pVQ3ZnbzY0cmRGZ2M1cUlXTWR0UG5IMnFcL0tBU1QiLCJtYWMiOiI5ZGQxOGIyYjE2NTNjYzc4ODFjNTUxNWUxNTE5YWZkNTgxZTY0ZTEzYjkxZDYyMTNkYzUxM2E4NmFhYWQxNGVjIn0%3D; expires=Mon, 08-Apr-2019 08:07:26 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IjhyOFFxWDk4WHhFUmllNlwvNXFRRStRPT0iLCJ2YWx1ZSI6Ik44anBqUXgyRUtHdmM0S1ZuY0JtczFMNllETmQwVDlleGtzZEVxTG40aWlEWjZDQ2VFREdzXC9EaU1zQThZdWFEIiwibWFjIjoiYzU5M2FiOWQ2NTFhMDY3ZTI1ZGExNjI5MTUxYmY1ODIwNTk3YTVkYmQ4ZjI2ZmYzMWY2NDVmMzI2ZTczNTExYiJ9; expires=Mon, 08-Apr-2019 08:07:26 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"stores\": [\n        {\n            \"id\": 4,\n            \"name\": \"Store 4 Patch\",\n            \"address\": \"Guanacaste Patch\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Store 5\",\n            \"address\": \"Puntarenas\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Store 11\",\n            \"address\": \"Alajuela\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Store 8\",\n            \"address\": \"San Jose\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"test 1\",\n            \"address\": \"address 1\"\n        }\n    ],\n    \"sucess\": true,\n    \"total_elements\": 5\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/stores?name=test 1&address=address 1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/stores?name=test 1&address=address 1",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"stores"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test 1"
+						},
+						{
+							"key": "address",
+							"value": "address 1"
+						}
+					]
+				},
+				"description": "Adds a new store"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/stores?name=test 1&address=address 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/stores?name=test 1&address=address 1",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"stores"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test 1"
+								},
+								{
+									"key": "address",
+									"value": "address 1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:07:51 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6InFtSjQyYjVFSXJ5YUo0dDcrZlpNVFE9PSIsInZhbHVlIjoiaisrbUlXMUcxRjdwWGpIZ1VROXRmQTlnQ05cL0RVXC9mYjFHczFcL3psbHY1QUhHWWpCUjdPZVRBOTFxMDV4bnVQSyIsIm1hYyI6IjM3OTBjZDEyZTRkNDIzMTllZTk0YjNhNzRlODE4OWEyZjc2OTUzYTAyYzYzZDA4OWQwZGUxYmI5NWI1ZjMyOGUifQ%3D%3D; expires=Mon, 08-Apr-2019 08:07:51 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImhSZkZBdTJOVkJ0OFo0Y2NzYXZVMmc9PSIsInZhbHVlIjoicW1uSVpzS3VvalwvczVCMyt1cmwweFFGSWVRbmZScDFFVnJVa3hPMzlhSUlZQk1nQldCWFQwakxxUGgzTU00TGUiLCJtYWMiOiIyNjEzOWRhNmMwNzM1YTk5NDFjMDhmNzc2OGU4M2UxODZlYzYxYjFlNzBiZjJlNDE5ZmYzNDk4NTI1YWMzNjNmIn0%3D; expires=Mon, 08-Apr-2019 08:07:51 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"store\": {\n        \"name\": \"test 1\",\n        \"address\": \"address 1\",\n        \"id\": 15\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/stores/4",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/stores/4",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"stores",
+						"4"
+					]
+				},
+				"description": "Gets information from a specific store"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/stores/4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/stores/4",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"stores",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:08:04 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6Im5hUVVvTURmQ0s4aGZORXJmVVM5VlE9PSIsInZhbHVlIjoiWXBtRG1ITmNYZVJRM1wvcUxwaXV5emhna1l3ZFRIWmNxb1pTQ3VNN2xubGpER3J6a0hyS0tYVWtqZUFZY2Y0aVIiLCJtYWMiOiJiMGEzN2NiODhmMzQ0MzdiZTNlZGFiZTgwZDg4NmM4OWUyMjhlOTc5ZGM5YjU0MDk1ZWIzYmVjNmQ0NmZkZDc2In0%3D; expires=Mon, 08-Apr-2019 08:08:04 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IjRzNWV5dDlGaGhoeUwzbjNjeWZ4UEE9PSIsInZhbHVlIjoiXC84eUp0R2NkSWdlWFg1bERnNmVhY1ZOSWt1YWhiWmlhWVJKbWxNZFVVSENlRUdDbFJOMzRCOGt3WkR2SHgxMzkiLCJtYWMiOiJkZWMwZDE2ZjBjMmU5OTlkMDAyZmJlZjY3YmI0MjJkZmMyNDE5ODk3YjRhMjliZWRhMWUyNjQ4MDZhYjU3YThmIn0%3D; expires=Mon, 08-Apr-2019 08:08:04 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"store\": {\n        \"id\": 4,\n        \"name\": \"Store 4 Patch\",\n        \"address\": \"Guanacaste Patch\"\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/stores/4?name=Store 4 Patch&address=Guanacaste Patch",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/stores/4?name=Store 4 Patch&address=Guanacaste Patch",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"stores",
+						"4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Store 4 Patch"
+						},
+						{
+							"key": "address",
+							"value": "Guanacaste Patch"
+						}
+					]
+				},
+				"description": "Updates information from a specific store"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/stores/4?name=Store 4 Patch&address=Guanacaste Patch",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/stores/4?name=Store 4 Patch&address=Guanacaste Patch",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"stores",
+								"4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Store 4 Patch"
+								},
+								{
+									"key": "address",
+									"value": "Guanacaste Patch"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:08:26 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IkdtWDYwVWtHbVhXclo3T3JiVnVuZ1E9PSIsInZhbHVlIjoiZ2FESkd5MjhvcFFEV3pITkRUbzJmM205TmQ5QXZCZHR0dUxxWWdCc242cUlRdXFpNEdueWRwVkpoYU5SbHB3TiIsIm1hYyI6ImYyNGIyYWQ2ZmMwOWQyYjIyMDI1ODk2MDdjODc3ZWQ5MmE0OWNlNjQ1MTYwZmEwNTI4OTIyZWYyOWI1MGQ1NDIifQ%3D%3D; expires=Mon, 08-Apr-2019 08:08:26 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6Iit1ampCdndMeTRMWnBcL0F1Vk95YlhRPT0iLCJ2YWx1ZSI6IkpWTkJLcVB5UVQ0OU96eENcLzUrXC9aVm5sN1g3eHJNeGh5bmUwMU1MckJwcHg3RnNUeDhsNU95VElSZlZzdTdJNCIsIm1hYyI6ImIzOTVkMzc2ODU3ZGFhZWFmYzQxMDk3NTcxNDU4MGI3ZjkwOGRlZmU1NmIyMjA5ZmFjNTUwZjc1NzEyMDllNWUifQ%3D%3D; expires=Mon, 08-Apr-2019 08:08:26 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"store\": {\n        \"id\": 4,\n        \"name\": \"Store 4 Patch\",\n        \"address\": \"Guanacaste Patch\"\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/stores/13",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/stores/13",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"stores",
+						"13"
+					]
+				},
+				"description": "Deletes a store"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/stores/13",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/stores/15",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"stores",
+								"15"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:08:43 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6ImRPeVJmd0hQSFA2aFRneWtOb1Exd0E9PSIsInZhbHVlIjoiZnNTSzFCcDBcL1ZDaU9PYnRaWWxMRkxremE2SkFuTkYzMW85YzRXc3V6alhXYTZnMktzYU10ZHB2WWlCSDJ4Z1kiLCJtYWMiOiI0ZDVhYmNiYmZkMzdlYzcxMmRiODRkNWQ5YzhjOGI0YzhjZDkyNmZkZDhhMjQzMTFhNzQyODQ0MDE1MjYxMDk5In0%3D; expires=Mon, 08-Apr-2019 08:08:43 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6Im5zS2dmV1JMRHRuSUNcLzdRdjdoNjRnPT0iLCJ2YWx1ZSI6IlY3ODZGaDVhME9qU2VjVE9nbWJXQ1hBRlRvN1wvYUpOQU5pZTMzbzhkbXVzdXN3ZURUUlp0cSt6dnd3UXQ3ZlE1IiwibWFjIjoiZTM3NDBkYmNiNDRkYTRiNjJlYjc5YjliMjM0ZjNlYWIxYmQ2NDJhNmM3NDEwZDMwMTE1YjdkMTM1ZmJiMzA4MiJ9; expires=Mon, 08-Apr-2019 08:08:43 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"store\": {\n        \"id\": 15,\n        \"name\": \"test 1\",\n        \"address\": \"address 1\"\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/articles",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/articles",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"articles"
+					]
+				},
+				"description": "Gets all articles"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/articles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/articles",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"articles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:08:56 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IkJLYStZdHZlMmdrYWlnMU5oYkZMQ0E9PSIsInZhbHVlIjoieGRLdHdtejlNNUMyemprdXZiU0ZtR1B2UWdhZnc4QVJQMXk5UkJUVUt0ZXdaYndTV1ZpYWFxQzk2ZVdhVFo4MCIsIm1hYyI6ImU2MjI5NWY4ZjlkNzZlYjUxMjRjNzk2Nzg2NzM2MjIxYTEyYWRiY2M1YzMxOTg2MDQ4YjM3ZTZhYjhmODY4MjkifQ%3D%3D; expires=Mon, 08-Apr-2019 08:08:56 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImlCNWt4XC9PMUt3ZHJSMEJza1AxUWh3PT0iLCJ2YWx1ZSI6IlQ1RFk2dlwvbnVtZ1RVSDN0TXhNNEhYVXM5TEd3YUZCNU56TUIxSkJqQ0MrYzAramJLQzFQa2MrVVwvQU1VQllLSSIsIm1hYyI6IjQ4YTZkYjU4YTQwNzUwN2UxNTMwMTM3Yzk3YWVkYTVjODA1MThiNjM4YzA0YWNhYTc5ODhiZTU0YzBiMWNmNzkifQ%3D%3D; expires=Mon, 08-Apr-2019 08:08:56 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"id\": 14,\n            \"description\": \"Test Description\",\n            \"price\": 9,\n            \"name\": \"Test\",\n            \"total_in_shelf\": 9,\n            \"total_in_vault\": 9,\n            \"store_name\": \"Store 4 Patch\"\n        },\n        {\n            \"id\": 12,\n            \"description\": \"Description\",\n            \"price\": 89,\n            \"name\": \"Name\",\n            \"total_in_shelf\": 89,\n            \"total_in_vault\": 89,\n            \"store_name\": \"Store 8\"\n        }\n    ],\n    \"success\": true,\n    \"total_elements\": 2\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/articles?name=test 1&description=description 1&price=89.9&total_in_shelf=9&total_in_vault=8&store_id=14",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/articles?name=test 1&description=description 1&price=89.9&total_in_shelf=9&total_in_vault=8&store_id=14",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"articles"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test 1"
+						},
+						{
+							"key": "description",
+							"value": "description 1"
+						},
+						{
+							"key": "price",
+							"value": "89.9"
+						},
+						{
+							"key": "total_in_shelf",
+							"value": "9"
+						},
+						{
+							"key": "total_in_vault",
+							"value": "8"
+						},
+						{
+							"key": "store_id",
+							"value": "14"
+						}
+					]
+				},
+				"description": "Adds a new article"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/articles?name=test 1&description=description 1&price=89.9&total_in_shelf=9&total_in_vault=8&store_id=14",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/articles?name=test 1&description=description 1&price=89.9&total_in_shelf=9&total_in_vault=8&store_id=14",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test 1"
+								},
+								{
+									"key": "description",
+									"value": "description 1"
+								},
+								{
+									"key": "price",
+									"value": "89.9"
+								},
+								{
+									"key": "total_in_shelf",
+									"value": "9"
+								},
+								{
+									"key": "total_in_vault",
+									"value": "8"
+								},
+								{
+									"key": "store_id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:09:05 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IjNCd0tialBDU0hBQmZqXC9cL2U3VFg4QT09IiwidmFsdWUiOiJNeXFKM3dvb0N5U29IWkRxZnpnTHRBdWxXekx1RHlmZVNqSGNXeEpnK1JcL1IwTGFMeENhcThDTjVyZ3ZOa0JCQiIsIm1hYyI6IjY2ODEwNzE3M2I4ZDZmNGFhZWEyODBmMjU5MDIxM2QyZWQ2OTEwZWY0ZDhiZGY0NDdlNjFjY2M1ZmQ0MmJmZDQifQ%3D%3D; expires=Mon, 08-Apr-2019 08:09:05 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IllpdGpZZDJ2aWt5QTU2eHZqM0ljRXc9PSIsInZhbHVlIjoiZEdMUlpHTXFjR2VESXI5NElaQXY1T3pQYWhBVk10anlDVVF4N09IOWE1QVY4dTF4Tit4bWREa2xRZGlVS3NrbyIsIm1hYyI6IjcwYmZkZmU1N2I2ZmI4ODU4YTdjYmIyMjMwMGU4ZDI4NDJjNmNlMWM5ZWViYWRiNzRkYjJkYjE0YWMzYjY0ODIifQ%3D%3D; expires=Mon, 08-Apr-2019 08:09:05 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"name\": \"test 1\",\n        \"description\": \"description 1\",\n        \"price\": \"89.9\",\n        \"total_in_shelf\": \"9\",\n        \"total_in_vault\": \"8\",\n        \"store_id\": \"14\",\n        \"id\": 16\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/articles/15?name=test 1 patch&description=description 1 patch&price=89.1&total_in_shelf=8&total_in_vault=7&store_id=14",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/articles/15?name=test 1 patch&description=description 1 patch&price=89.1&total_in_shelf=8&total_in_vault=7&store_id=14",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"articles",
+						"15"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "test 1 patch"
+						},
+						{
+							"key": "description",
+							"value": "description 1 patch"
+						},
+						{
+							"key": "price",
+							"value": "89.1"
+						},
+						{
+							"key": "total_in_shelf",
+							"value": "8"
+						},
+						{
+							"key": "total_in_vault",
+							"value": "7"
+						},
+						{
+							"key": "store_id",
+							"value": "14"
+						}
+					]
+				},
+				"description": "Updates specific article"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/articles/15?name=test 1 patch&description=description 1 patch&price=89.1&total_in_shelf=8&total_in_vault=7&store_id=14",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/articles/14?name=test 1 patch&description=description 1 patch&price=89.1&total_in_shelf=8&total_in_vault=7&store_id=14",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"articles",
+								"14"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "test 1 patch"
+								},
+								{
+									"key": "description",
+									"value": "description 1 patch"
+								},
+								{
+									"key": "price",
+									"value": "89.1"
+								},
+								{
+									"key": "total_in_shelf",
+									"value": "8"
+								},
+								{
+									"key": "total_in_vault",
+									"value": "7"
+								},
+								{
+									"key": "store_id",
+									"value": "14"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:11:32 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6Ik1jV3RRM01udjFrdHc5SG1IVHhEQ2c9PSIsInZhbHVlIjoieWRSaGFEZlIxNnNERDVla3h2MStwdElxaHNDNXJFdUJlclwvVThGS3orMkxOd1pQdUpXYmNGRGNuaTFrYkVyMnYiLCJtYWMiOiI5NWJhZDE2NzNiYjZjZjhmYzIzYzJkMzYwNGM1ZmUzNzQzOTBkMTA5NzA3YTg1YTgxY2RkZWE3MjBkYTY4MDA5In0%3D; expires=Mon, 08-Apr-2019 08:11:32 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6ImN4NU1rXC94d1wvV1FyQzNCcUREWFpkZz09IiwidmFsdWUiOiJpa2IwSjZzZHJZSWdCejMwWnhaQ3UwMEVrNlNyKzN5dHgrVTM5Rk1JVmV5Q2o0VzdKMWFvQkFleGVaVjJqcmtqIiwibWFjIjoiYTNiZWYxYWQ0ZDgwMzA0OTBkNjA5MDQxODJkNzJkM2Q2NWI5YzBjZDNlYzRlYjc1NjE2OTU2N2ZjOTg4YTU0OCJ9; expires=Mon, 08-Apr-2019 08:11:32 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"id\": 14,\n        \"name\": \"test 1 patch\",\n        \"description\": \"description 1 patch\",\n        \"price\": \"89.1\",\n        \"total_in_shelf\": \"8\",\n        \"total_in_vault\": \"7\",\n        \"store_id\": \"14\"\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/articles/15",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/articles/15",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"articles",
+						"15"
+					]
+				},
+				"description": "Deletes specific article"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/articles/15",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/articles/16",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"articles",
+								"16"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:09:29 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6IjRtR0ZHZzlJUkM3aWw5OURIQmgxbnc9PSIsInZhbHVlIjoiNXdLMGZDb3p6cjBjbVYwWUdOMzZTbDhSMjE4Tys3UlJqeTVFODRqMmgrTzJrWXROblhPanZ1d3RYeXF4cnZRbyIsIm1hYyI6ImYyODNhMDM1MGZmODBmOGFhOGJmZWFjNjA0MjBlNjg3NzZhOGRjM2NlOWRhZWJmYThlOWVjYWI3MmZiODQzM2UifQ%3D%3D; expires=Mon, 08-Apr-2019 08:09:29 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6Ik5PaGtEcjhNMHlFRHpJcEw2VmlRRVE9PSIsInZhbHVlIjoiNDhOVjlrUzhsUjB6UnVNaE80enZHb3V6VmFhcDlcL1B2VHA0NGR5UEhLU1VuSkt4THJDSGpcL280QldURnVTWG5JIiwibWFjIjoiNGU0YWU0NDQ4M2NiMzg4MDkzNmNhYjM4ZWZkNzY5NDlkZDgzZTQxMmQ1MTQ5OTM0MGI1NDE1MjdmNGMxNmFjNCJ9; expires=Mon, 08-Apr-2019 08:09:29 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"article\": {\n        \"id\": 16,\n        \"name\": \"test 1\",\n        \"description\": \"description 1\",\n        \"price\": 89.9,\n        \"total_in_shelf\": 9,\n        \"total_in_vault\": 8,\n        \"store_id\": 14\n    },\n    \"sucess\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "superzapatos.tk/services/articles/stores/4",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "my_user",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "my_password",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "superzapatos.com/services/articles/stores/4",
+					"host": [
+						"superzapatos",
+						"com"
+					],
+					"path": [
+						"services",
+						"articles",
+						"stores",
+						"4"
+					]
+				},
+				"description": "Gets all the articles from a specific store"
+			},
+			"response": [
+				{
+					"name": "superzapatos.tk/services/articles/stores/4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "superzapatos.com/services/articles/stores/14",
+							"host": [
+								"superzapatos",
+								"com"
+							],
+							"path": [
+								"services",
+								"articles",
+								"stores",
+								"14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.3"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, must-revalidate, max-age=0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Apr 2019 06:12:19 GMT"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "XSRF-TOKEN=eyJpdiI6Ijc3OG9DOE1pbDB4Mmh5XC9hV1wvTXZsQT09IiwidmFsdWUiOiIya3VucmwxcGhFK3BFSHBjZkpGZ3FEY0FtZXlNTkR3aXA2Zk5taW93cGU1SHVjczB2RzE3MFl3QkdTYTk1b3cxIiwibWFjIjoiZmU1ODIxYjMyYmIxMTYzNGJlNDMxZWI1MTk4ZGIwNDkyZGZkZmJhN2Y1NmIyOGI4ZGEyNTdhNzZmYTMxYjFiOSJ9; expires=Mon, 08-Apr-2019 08:12:19 GMT; Max-Age=7200; path=/"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "laravel_session=eyJpdiI6IjQyWmhqUnRrOVc2VzA5ZTlZUnlpR3c9PSIsInZhbHVlIjoiZUY0YmM4T3M5alM3OWJXK1M5WjFqWEZZcnpWZytcL3dPanh4STNpRXlVUFBsRnN3eU9VTEszXC92SCtISlRcL0RrXC8iLCJtYWMiOiIyOWNhNjMyZjFiMzE3OWQxMDg4MGE1MTA1ZjNhYThkODMwMjNkMWJhZjJhZmQyZjkxYjRlNDRiNWJiYmQ1Y2Q5In0%3D; expires=Mon, 08-Apr-2019 08:12:19 GMT; Max-Age=7200; path=/; httponly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"articles\": [\n        {\n            \"id\": 14,\n            \"name\": \"test 1 patch\",\n            \"description\": \"description 1 patch\",\n            \"price\": 89.1,\n            \"total_in_shelf\": 8,\n            \"total_in_vault\": 7,\n            \"store_name\": \"test 1\"\n        }\n    ],\n    \"success\": true,\n    \"total_elements\": 1\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "my_user",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "my_password",
+				"type": "string"
+			}
+		]
+	}
+}
